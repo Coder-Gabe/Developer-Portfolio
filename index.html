@@ -35,6 +35,9 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
         />
 
+        <!-- Hover Card Css -->
+        <link href="/css/hoverCard.css" rel="stylesheet" />
+
         <!-- CSS -->
         <link href="/css/site.css" rel="stylesheet" />
 
@@ -88,9 +91,7 @@
                             <a class="nav-link" href="#Projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Challenges"
-                                >Challenges</a
-                            >
+                            <a class="nav-link" href="#Challenges">Challenges</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Blog">Blog</a>
@@ -108,16 +109,16 @@
                 <div class="mainHeader-content">
                     <div class="mainHeader-wrapper">
                         <div class="mainTitle">
-                            <span>Dane</span>
+                            <span>GABRIEL</span>
                             <span>
                                 <img
-                                    class="mainLogo"
-                                    src="/img/dw_signature_black.png"
+                                    class="mainLogo img-thumbnail"
+                                    src="/img/GH Logo.png"
                                 />
                             </span>
                         </div>
 
-                        <div class="mainTitle">WHITMAN</div>
+                        <div class="mainTitle">HERNANDEZ</div>
                         <div class="subTitle">SOFTWARE DEVELOPER</div>
                         <a href="#contact" class="btn btn-primary mt-3"
                             >CONTACT ME</a
@@ -128,39 +129,135 @@
         </header>
 
         <main class="container-xxl">
-            <section id="About"></section>
-            <section id="Skills"></section>
-            <section id="Projects"></section>
-            <section id="Challenges"></section>
-            <section id="Blog"></section>
-            <section id="Contact"></section>
+            <section class="section-page" id="About">
+                <h2>About Me</h2>
+                <div class="row g-3">
+                    <div class=" col-12 col-lg-4">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="/img/dane_profile.jpg"/>
+                            <source media="(min-width: 768px)" srcset="/img/dane_profile_992.jpg"/>
+                            <source media="(min-width: 576px)" srcset="/img/dane_profile_768.jpg"/>
+                          <img src="/img/dane_profile_576.jpg" class="img-fluid profilePic"/>  
+                        </picture>
+                        </div>
+                    <div class=" col-12 col-lg-8">
+                        <h3>Im Gabe Hernandez, A Software Web Developer</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ratione asperiores cupiditate necessitatibus doloremque tempore, sapiente, magni vitae sit, corrupti est perspiciatis nobis! Enim maxime, aspernatur qui recusandae omnis tenetur!
+                            </p>
+                            <div class="row row-cols-1 row-cols-lg-2">
+                                <div class="col">
+                                    Name: Gabe Hernandez
+                                </div>
+                                <div class="col">
+                                    Email: <a href="mailto:codergabe@gmail.com">codergabe@gmail.com</a>
+                                </div>
+                                <div class="col">
+                                    From: Casa Grande, Az
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary mt-3">Download Resume</a>
+                    </div>
+            </section>
+            <section class="section-page" id="skills">
+                <h2>What i Use</h2>
+                 <p>check out my projects <a href="#projects">full stack projects below.</a>
+                 </p> 
+                 <div class="row rowcols-1 rol-cols-md-2 row-cols-lg-3 gy-3">
+                    <div class="col">
+                        <i class="devicon-csharp-plain colored"></i>
+                        <p> i use C# on a daily basis to build full stack applications. You can see my work implementation C# in my <a href="#projects"></a> section
+                        </p>
+                    </div>
+                    <div class="col">
+                        <i class="devicon-dotnetcore-plain colored"></i>
+                        <p>I use proven desing patterns and frameworks to build websites. ASP.NET Core Web and MVC fits the bill for most projects. Visit my projects to see examples</p>
+                    </div>
+                    <div class="col">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <p>Javascript is the language of the web. I use vanilla JS and i am comfortable with many JS frameworks. Check my <a href="#challenges"></a></p>
+                    </div>
+                    <div class="col">
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <p>I use HTML, CSS and Bootstrap build to beautiful responsive websites. Bootstrap is my go to CSS framework. Many may shy away from it, but i embrace it
+                        </p>
+                    </div>
+                    <div class="col">
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-original colored"></i>
+                        <p>I use git and github for all my projects.  Git is the most used source control framework on the planet. I also employ CI/CO for publishing
+                        </p>
+                    </div>
+                    <div class="col">
+                        <i class="devicon-postgresql-plain-wordmark colored"></i>
+                        <p> SQL is the language of the datebase. My projects all utilize a database.  I have used Postgres on all of them. I can write SQL on any DB platform</p>
+                    </div>
+                 </div>  
+            </section>
+            <section class="section-page" id="Projects">
+                <h2>Things i have built</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatum eius accusamus consequatur dolore dolorem veniam aliquid itaque fuga laudantium repudiandae soluta, quo neque temporibus officia optio iusto nobis tempora!. <a href="#contact">Contact Me</a> to get a complete walkthrough
+                </p>
+                <div class="row row-cols-1 row-cols-md-3 g-5">
+                    <div class="col">
+                        <div class="hc-wrapper">
+                            <div class="hc-card">
+                                <picture>
+                                    <source srcset="/img/logos/BugTracker_600.jpg"
+                                            media="(min-width: 992px)">
+                                    <img src="/img/logos/BugTracker_200.jpg">
+                                </picture>
+                                <div class="hc-content">
+                                    <p>A full stack bug traker app built with
+                                        ASP.NET MC, C# and SQL.
+                                    </p>
+                                    <button type="button" class="btn btn-primary">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+
+            </section>
+            <section class="section-page" id="Challenges">
+                <h2>smaller things i built</h2>
+            </section>
+            <section class="section-page" id="Blog">
+                <h2>Stuff i write about</h2>
+            </section>
+            <section class="section-page" id="Contact">
+                <h2>lets chat</h2></section>
         </main>
 
-        <footer class="container-fluid bg-dark">
+        <footer class="container-fluid">
             <div class="container-xxl py-3">
                 <div
-                    class="row row-cols-1 row-cols-md-3 align-items-center text-center"
-                >
+                    class="row row-cols-1 row-cols-md-3 align-items-center text-center gy-3">
                     <div class="col">
                         <img
                             src="/img/GH Logo.png"
-                            class="rounded-5"
-                            height="75"
-                        />
+                            class="rounded-5 img-thumbnail"
+                            height="75"/>
                     </div>
                     <div class="col text-md-start">
-                        <a href="https://linkedin.com"
-                            ><i class="socialicons bi bi-linkedin p-2"></i
-                        ></a>
-                        <a href="https://github.com"
-                            ><i class="socialicons bi bi-github p-2"></i
-                        ></a>
-                        <a href="https://twitter.com"
-                            ><i class="socialicons bi bi-twitter p-2"></i
-                        ></a>
-                        <a href="https://youtube.com"
-                            ><i class="socialicons bi bi-youtube p-2"></i
-                        ></a>
+                        <a href="https://linkedin.com">
+                            <i class="socialicons bi bi-linkedin p-2"></i>
+                        </a>
+                        <a href="https://github.com">
+                            <i class="socialicons bi bi-github p-2"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="socialicons bi bi-twitter p-2"></i>
+                        </a>
+                        <a href="https://youtube.com">
+                            <i class="socialicons bi bi-youtube p-2"></i>
+                        </a>
                     </div>
                     <div class="col text-light order-md-first text-md-end">
                         &copy; 2023 Gabriel Hernandez
