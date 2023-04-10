@@ -35,7 +35,7 @@
     <link href="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top id=mainNav">
         <div class="container-xxl">
             <a class="navbar-brand" href="Home">
@@ -130,7 +130,7 @@
                     <a href="#" class="btn btn-primary mt-3">Download Resume</a>
                 </div>
         </section>
-        <section class="section-page" id="skills">
+        <section class="section-page" id="Skills">
             <h2>What i Use</h2>
             <p>check out my projects <a href="#projects">full stack projects below.</a>
             </p>
@@ -512,7 +512,7 @@
             <h2>Contact Me</h2>
             <div class="container">
                 <div class="bg-success-emphasis p-2 border border-1 border-info shadow-lg">
-                    <form action="#">
+                    <form method="POST" data-netlify="true" name="contact">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <label for="FirstName" class="form-label">First Name</label>
