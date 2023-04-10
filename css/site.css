@@ -186,7 +186,15 @@ h1, .h1 {
 
 
 .section-page:nth-child(odd) {
-	background-color: var(--gh-primary-color)
+	background-color: var(--gh-primary-color);
+}
+
+.section-page:nth-child(2) {
+	background-color: var(--gh-light-color);
+}
+
+.section-page:last-child {
+	background-color: var(--gh-light-color);
 }
 
 .profilePic {
@@ -243,9 +251,30 @@ h1, .h1 {
     color: var(--gh-highlight-color);
 }
 
-footer {
-	background: var(--gh-dark-color);
+.footer-main {
+	background-color: var(--gh-dark-color);
 }
+
+.footer-cta {
+	background-color: var(--gh-secondary-color);
+	border-radius: 10px;
+	width: 75%;
+}
+
+.footer-message {
+	color: var(--gh-dark-color);
+	letter-spacing: .1rem;
+}
+
+.footer-bg-cta {
+	background: linear-gradient(to bottom, 
+	var(--gh-light-color) 0%, 
+	var(--gh-light-color) 50%, 
+	var(--gh-dark-color) 50%, 
+	var(--gh-dark-color) 100%);
+}
+
+
 
 /* END: Footer */
 
