@@ -45,7 +45,6 @@ body {
 body {
     display: flex;
     flex-direction: column;
-
     font-family: var(--gh-body-font);
     font-size: var(--gh-font-size);
     font-weight: var(--gh-font-weight);
@@ -104,6 +103,12 @@ h1, .h1 {
 
 
 /* START: Main Header*/
+
+body {
+	background-color: #D6EDFF;
+	
+}
+
 .mainLogo {
     height: 0.6em;
 }
@@ -285,14 +290,14 @@ h1, .h1 {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 	.mainHeader {
-		background-image: url(/img/DevPortFolioBG_767.png);
+		background-image: url(/img/Arizona-pic-776px.png);
 	}
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.mainHeader {
-		background-image: url(/img/DevPortFolioBG_992.png);
+		background-image: url(/img/Arizona-pic-992px.png);
 		height: 300px;
 	}
 
@@ -320,7 +325,7 @@ h1, .h1 {
 @media (min-width: 992px) { 
 		.mainHeader {
 		height: 400px;
-		background-image: url(/img/DevPortFolioBG_1200.png);
+		background-image: url(/img/Arizona-pic-1200px.png);
 		
 	}
 
@@ -340,7 +345,8 @@ h1, .h1 {
 @media (min-width: 1200px) { 
 			.mainHeader {
 		height: 500px;
-		background-image: url(/img/DevPortFolioBG_2560.png);
+		background-image: url(/img/picacho_peak__large_968px.jpg);
+		
 		
 	}
 
